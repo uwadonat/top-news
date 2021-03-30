@@ -1,0 +1,8 @@
+<h1 style = "Text-align:center"> <%= @post.title %> <h1> <br>
+
+<h4 style = "Text-align:justify"><%= @post.body %></h4>
+</ul> 
+<li> <%= link_to "delete", post_path(@post),
+method: :delete,
+data: { confirm: "Are you sure?" } %> </li>
+</ul>

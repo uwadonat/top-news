@@ -1,0 +1,9 @@
+<h1 style ="text-align: center;color:blue;"> Welcome on Top-news homepage</h1>
+<h2 style ="text-align: center;color:blue;">Top news</h2>
+<% @posts.each do |post| %>
+    <%= link_to post.title, post %>
+    <br>
+<% end %>
+</ul> 
+<li> <%= link_to "new post", new_post_path %> </li>
+</ul>

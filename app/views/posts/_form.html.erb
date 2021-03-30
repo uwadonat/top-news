@@ -1,0 +1,30 @@
+<%= form_with model: @post do |form| %>
+    <div>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+      <% @post.errors.full_messages_for(:title).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
+      </div>
+  
+    <div>
+      <%= form.label :body %><br>
+      <%= form.text_area :body %>
+      <% @post.errors.full_messages_for(:body).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
+    </div>
+  
+
+    <div>
+    <%= form.label :user_id %><br>
+    <%= form.text_area :user_id %>
+    <% @post.errors.full_messages_for(:user_id).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+  </div>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
