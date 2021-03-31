@@ -2,6 +2,7 @@
 
 <h4 style = "Text-align:justify"><%= @post.body %></h4>
 </ul> 
+<li><%= link_to "edit", edit_post_path(@post) %></li>
 <li> <%= link_to "delete", post_path(@post),
 method: :delete,
 data: { confirm: "Are you sure?" } %> </li>
