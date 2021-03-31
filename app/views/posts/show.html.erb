@@ -7,3 +7,7 @@
 method: :delete,
 data: { confirm: "Are you sure?" } %> </li>
 </ul>
+<h2>comments</h2>
+<%= render @post.comments %>
+<h2> leave your comment here </h2>
+<%= render 'comments/form' %>

@@ -1,0 +1,20 @@
+<%= form_with model: [ @post, @post.comments.build ] do |form| %>
+ <p>
+   <%= form.label :Your_comments %> <br>
+   <%= form.text_area :body %>
+ </p>
+
+ <p>
+   <%= form.label :post_id %> <br>
+   <%= form.text_field :post_id %>
+ </p>
+
+ <p>
+   <%= form.label :user_id %> <br>
+   <%= form.text_field :user_id %>
+ </p>
+
+ <p>
+   <%= form.submit %>
+ </p>
+<% end %>
